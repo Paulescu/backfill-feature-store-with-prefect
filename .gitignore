@@ -39,3 +39,5 @@ dask-worker-space/
 # VCS
 .git/
 .hg/
+
+src/deployment.py

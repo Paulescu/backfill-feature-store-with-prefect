@@ -1,13 +1,10 @@
-.PHONY: deploy
+.PHONY: init
 
-deploy:
-	poetry run python src/deployment.py
+# install Poetry and Python dependencies
+init:
+	curl -sSL https://install.python-poetry.org | python3 -
+	poetry install
 
-agent:
-	poetry run prefect agent start -q 'test'
-
-run-deployment-locally:
-	poetry run prefect deployment run log-flow/log-simple
-
-list-deployments:
-	poetry run prefect deployment ls
+# backfill OHLC data from $(from_day) to $(to_day)
+backfill:
+	poetry run python src/backfill.py --from_day $(from_day) --to_day $(to_day)
