@@ -54,14 +54,3 @@ This repository shows how to backfill historical OHLC feature in a Feature Store
 Check the [Real-World ML Program](https://realworldmachinelearning.carrd.co/), a hands-on, 3-hour course where you will learn
 how to design, build, [deploy](https://taxi-demand-predictor.streamlit.app/), and [monitor](https://taxi-demand-predictor-monitoring.streamlit.app/) complete ML products.
 
-
-## TODOs
-- [x] toy example prefect
-- [x] monitor execution
-- [x] task to connect to kraken trades api
-- [x] full script to backfill given period
-- [x] save data to hopsworks
-- [ ] make diagram
-- [x] beautiful readme
-- [ ] newsletter - with 2 CTAs
-
